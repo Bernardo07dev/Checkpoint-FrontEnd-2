@@ -7,6 +7,7 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: azure;
     font-family: 'Montserrat';
+    margin: 0 15%;
 }
 
 /* ---MENU--- */
@@ -18,7 +19,7 @@ body{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15%;
-    margin: 1% 15%;
+    margin: 1% 0;
 }
 
 .nav-item{
@@ -48,10 +49,6 @@ body{
 
 /* ---CARROSEL INICIAL--- */
 
-.carousel{
-    margin: 0 15%; 
-}
-
 .carousel-item.active{
     display: flex;
     flex-direction: column;
@@ -62,7 +59,13 @@ body{
     height: 60vh;
     border-radius: 20px;
     gap: 5px;
+    text-align: center;
 }
+
+/* .carousel-item {
+    padding-left: 290px;
+    padding-right: 290px;
+} */
 
 #one{
     background-image: url(Assests/img/bg-home-eco.png);
@@ -88,3 +91,14 @@ body{
     background-image: url(Assests/img/Bg-home-2.png);
 }
 
+/* AJUSTES RESPONSIVO */
+@media (max-width: 990px) {
+    body{
+        margin: 2% 10%;
+    }
+
+    .navbar .navbar-brand {
+        display: none;
+    }
+
+}
