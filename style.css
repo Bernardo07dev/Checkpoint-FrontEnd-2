@@ -4,7 +4,6 @@
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
     background-color: #F0FFFF!important;
     font-family: 'Montserrat';
     /* margin: 0 15%; */
@@ -198,11 +197,12 @@ header{
     align-items: center;
     background-color: transparent!important;;
     border: 1px solid #00000021;
+    width: 25%;
 }
 
 .produtos{
     margin-bottom: 55px;
-    margin: 0 8% 10% 15%;
+    margin: 0 15% 5% 15%;
 }
 
 .produtos > h2{
@@ -245,8 +245,8 @@ header{
 
 /* FOOTER */
 footer{
-    background-color: #e0e0e0c4;
-    padding: 7% 15%;
+    background-color: #e9e9e9e0;
+    padding: 7% 18%;
     display: flex;
     flex-direction: row;
     align-items:flex-start;
@@ -258,6 +258,7 @@ footer h2{
 }
 
 footer a{
+    line-height: 32px;
     color: #000000;
     font-size: 0.9em;
 }
@@ -282,10 +283,58 @@ footer .categorias{
     flex-direction: column;
 }
 
+/* SECÇÃO PROPÓSITO */
+.proposito{
+    display: flex;
+    flex-direction: row;
+    margin:0 15%;
+    gap: 1.5%;
+    margin-bottom: 5%;
+}
+
+.proposito .col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    padding: 6%;
+    height: 40vh;
+    gap: 10px;
+    border-radius: 15px;
+}
+
+.proposito img{
+    width: 30%;
+}
+
+.proposito h2{
+    color: white;
+    font-size: 1.3em;
+}
+
+.proposito button{
+    width: 55%;
+    padding: 10px;
+    border-radius: 40px;
+}
+
+.proposito a{
+    color: #000000;
+    text-decoration: none;
+}
+
+#prop-1{
+    background-image: url('Assests/img/obras.png');
+}
+
+#prop-2{
+    background-image: url('Assests/img/produzidos.png');
+}
+
 /* AJUSTES RESPONSIVO */
 @media (max-width: 990px) {
-    body{
-        margin: 2% 5%;
+    header, .carrosel{
+        margin: 4%;
     }
 
     .navbar .navbar-brand {
@@ -302,9 +351,9 @@ footer .categorias{
     .col{
         display: flex;
         flex-direction: column;
-        padding: 20%;
         background-size: cover;
         background-repeat: no-repeat;
+        border-radius: 20px;
     }
 
     .container h2{
@@ -312,5 +361,79 @@ footer .categorias{
         text-align: center;
         margin-bottom: 20px;
     }
+
+    .principais{
+        margin: 6% 4%;
+        height: 130vh;
+    }
+
+    .produtos {
+        width: 90%; 
+        max-width: 600px; 
+        margin: 0 auto 5%;
+    }
+
+    .produtos > h2 {
+        text-align: center;
+        font-size: 1.4em;
+        margin-bottom: 25px; 
+    }
+
+    .line {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card img {
+        width: 60%;
+    }
+
+    .card-body{
+        width: 100%;
+        background-color: #f3f2f2e0;
+    }
+
+    /* ESTILIZAÇÃO FOOTER */
+    footer{
+        padding: 8%;
+        justify-content: center;
+    }
+
+    footer .categorias{
+        display: none;
+    }
+
+    footer > .sociais, .menu-f{
+        width: 50%;
+    }
+
+    footer h2{
+        font-size: 1.1em;
+    }
+
+    footer img{
+        width: 10%;
+    }
+
+    .proposito{
+        display: flex;
+        flex-direction: column;
+        margin:5% 7% 0 7%;
+        gap: 20px;
+        margin-bottom: 5%;
+    }
+
+    .proposito h2{
+        font-size: 1.1em;
+    }
+
 
 }
