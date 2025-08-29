@@ -4,7 +4,6 @@
 }
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
     background-color: #F0FFFF!important;
     font-family: 'Montserrat';
     /* margin: 0 15%; */
@@ -368,33 +367,33 @@ footer .categorias{
         height: 130vh;
     }
 
-    .produtos{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .produtos {
+        width: 90%; 
+        max-width: 600px; 
+        margin: 0 auto 5%;
     }
 
-    .produtos h2{
+    .produtos > h2 {
         text-align: center;
+        font-size: 1.4em;
+        margin-bottom: 25px; 
     }
 
-    .line{
+    .line {
         width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
         margin: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        padding: 0;
     }
 
-    .card{
+    .card {
         width: 100%;
-        margin: 10px;
     }
 
-    .card img{
-        width: 40%;
+    .card img {
+        width: 60%;
     }
 
     .card-body{
