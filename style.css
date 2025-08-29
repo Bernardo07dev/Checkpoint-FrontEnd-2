@@ -198,6 +198,7 @@ header{
     align-items: center;
     background-color: transparent!important;;
     border: 1px solid #00000021;
+    width: 25%;
 }
 
 .produtos{
@@ -245,7 +246,7 @@ header{
 
 /* FOOTER */
 footer{
-    background-color: #e0e0e0c4;
+    background-color: #e9e9e9e0;
     padding: 7% 18%;
     display: flex;
     flex-direction: row;
@@ -285,6 +286,9 @@ footer .categorias{
 
 /* AJUSTES RESPONSIVO */
 @media (max-width: 990px) {
+    header, .carrosel{
+        margin: 4%;
+    }
 
     .navbar .navbar-brand {
         display: none;
@@ -300,9 +304,9 @@ footer .categorias{
     .col{
         display: flex;
         flex-direction: column;
-        padding: 10%;
         background-size: cover;
         background-repeat: no-repeat;
+        border-radius: 20px;
     }
 
     .container h2{
@@ -310,5 +314,67 @@ footer .categorias{
         text-align: center;
         margin-bottom: 20px;
     }
+
+    .principais{
+        margin: 6% 4%;
+        height: 130vh;
+    }
+
+    .produtos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .produtos h2{
+        text-align: center;
+    }
+
+    .line{
+        width: 100%;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card{
+        width: 100%;
+        margin: 10px;
+    }
+
+    .card img{
+        width: 40%;
+    }
+
+    .card-body{
+        width: 100%;
+        background-color: #f3f2f2e0;
+    }
+
+    /* ESTILIZAÇÃO FOOTER */
+    footer{
+        padding: 8%;
+        justify-content: center;
+    }
+
+    footer .categorias{
+        display: none;
+    }
+
+    footer > .sociais, .menu-f{
+        width: 50%;
+    }
+
+    footer h2{
+        font-size: 1.1em;
+    }
+
+    footer img{
+        width: 10%;
+    }
+
 
 }
