@@ -7,10 +7,14 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: #F0FFFF!important;
     font-family: 'Montserrat';
-    margin: 0 15%;
+    /* margin: 0 15%; */
 }
 
 /* ---MENU--- */
+header{
+    margin: 0 15%
+}
+
 .navbar, .bg-body-tertiary{
     background-color: azure!important;
 }
@@ -67,6 +71,10 @@ body{
 
 /* ---CARROSEL INICIAL--- */
 
+.carrosel{
+    margin: 0 15%
+}
+
 .carousel-item.active{
     margin: 0 0 60px 0;
     display: flex;
@@ -106,6 +114,10 @@ body{
 }
 
 /* ---SECÇÃO CATEGORIAS--- */
+.principais{
+    margin: 0 15%;
+}
+
 .container h2{
     font-size: 23px;
 }
@@ -190,6 +202,7 @@ body{
 
 .produtos{
     margin-bottom: 55px;
+    margin: 0 8% 10% 15%;
 }
 
 .produtos > h2{
@@ -228,6 +241,45 @@ body{
 .card-body p{
     font-size: 1em;
     font-weight: 500;
+}
+
+/* FOOTER */
+footer{
+    background-color: #e0e0e0c4;
+    padding: 7% 15%;
+    display: flex;
+    flex-direction: row;
+    align-items:flex-start;
+    justify-content: left;
+}
+
+footer h2{
+    font-size: 1.2em;
+}
+
+footer a{
+    color: #000000;
+    font-size: 0.9em;
+}
+
+footer img{
+    width: 4%;
+}
+
+footer .sociais{
+    width: 50%;
+}
+
+footer .menu-f{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+footer .categorias{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
 }
 
 /* AJUSTES RESPONSIVO */
