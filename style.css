@@ -180,7 +180,7 @@ body{
 }
 
 .card-img-top{
-    width: 70%;
+    width: 60%;
 }
 
 .card-body{
@@ -202,7 +202,7 @@ body{
     background-color: #e7e7e7;
     border:#00000021;
     color: black;
-    font-size: 15px;
+    font-size: 0.8em;
     padding: 10px;
     font-weight: 500;
 }

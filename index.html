@@ -13,81 +13,87 @@
 
 <body>
   <!-- Menu -->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-      <!-- Imagem Logo -->
-      <img class="navbar-brand" src="Assests/icons/Logo Eco 3.svg"></img>
-      <!-- Menu Responsivo -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <!-- Páginas Menu -->
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#">Home</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="Pages/produtos.html">Produtos</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="Pages/tecnologia.html">Tecnologia</a> </li>
-          <li class="nav-item"> <a class="nav-link" href="Pages/sobre.html">Sobre</a> </li>
-        </ul>
+   <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <!-- Imagem Logo -->
+        <img class="navbar-brand" src="Assests/icons/Logo Eco 3.svg"></img>
+        <!-- Menu Responsivo -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Páginas Menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#">Home</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="Pages/produtos.html">Produtos</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="Pages/tecnologia.html">Tecnologia</a> </li>
+            <li class="nav-item"> <a class="nav-link" href="Pages/sobre.html">Sobre</a> </li>
+          </ul>
+        </div>
+        <!-- Funções Menu -->
+        <div class="icones">
+          <img src="Assests/icons/User-icon.svg" alt="">
+          <img src="Assests/icons/serch-icon.svg" alt="">
+          <img src="Assests/icons/Cart-icon.svg" alt="">
+        </div>
       </div>
-      <!-- Funções Menu -->
-       <div class="icones">
-        <img src="Assests/icons/User-icon.svg" alt="">
-        <img src="Assests/icons/serch-icon.svg" alt="">
-        <img src="Assests/icons/Cart-icon.svg" alt="">
-       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
   <!-- CARROSEL BG PRINCIPAL -->
-  <div id="carouselExample" class="carousel slide">
-    <div class="carousel-inner">
-      <div class="carousel-item active" id="one">
-        <img src="Assests/icons/Logo Eco 2.png" alt="Logo EcoTrend">
-        <h2>Venha Mudar o Mundo Conosco</h2>
-        <p>Faça parte do movimento da EcoTrend, conheça nosso propósito e nossa tecnologia</p>
-        <a href="Pages/sobre.html">Clique Para Conhecer</a>
-      </div>
-
-      <div class="carousel-item" id="two">
+   <section>
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active" id="one">
           <img src="Assests/icons/Logo Eco 2.png" alt="Logo EcoTrend">
-          <h2><strong>10% OFF</strong> em Produtos de Beleza</h2>
-          <p>Clique no botão a baixo e veja nossa principais opções</p>
-          <a href="Pages/produtos.html">Veja os Produtos</a>
-      </div>
+          <h2>Venha Mudar o Mundo Conosco</h2>
+          <p>Faça parte do movimento da EcoTrend, conheça nosso propósito e nossa tecnologia</p>
+          <a href="Pages/sobre.html">Clique Para Conhecer</a>
+        </div>
 
-      </div> <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
+        <div class="carousel-item" id="two">
+            <img src="Assests/icons/Logo Eco 2.png" alt="Logo EcoTrend">
+            <h2><strong>10% OFF</strong> em Produtos de Beleza</h2>
+            <p>Clique no botão a baixo e veja nossa principais opções</p>
+            <a href="Pages/produtos.html">Veja os Produtos</a>
+        </div>
+
+        </div> <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
 
   <!-- CATEGORIAS / PRINCIPAIS PRODUTOS -->
-  <div class="container">
-    <h2>Nosso Principais Linhas de <br><strong>Produtos Sustentáveis</strong></h2>
-    <div class="imagens">
-      <div class="col" id="img-1">
-        <h2>Roupas e acessórios <strong>sustentáveis</strong></h2>
-        <button><a href="Pages/produtos.html">Clique e Veja Mais</a></button>
-      </div>
-      <div class="col" id="img-2">
-        <h2>Conheça nossa <strong>Tecnologia verde</strong></h2>
-        <button><a href="Pages/tecnologia.html">Clique e Veja Mais</a></button>
-      </div>
-      <div class="col" id="img-3">
-        <h2>Produtos Pessoais e de beleza <strong>Naturais</strong></h2>
-        <button><a href="Pages/produtos.html">Clique e Veja Mais</a></button>
-      </div>
-      <div class="col" id="img-4">
-        <h2>Itens <strong>Sustentáveis</strong> Para Casa</h2>
-        <button><a href="Pages/produtos.html">Clique e Veja Mais</a></button>
+  <section>
+    <div class="container">
+      <h2>Nosso Principais Linhas de <br><strong>Produtos Sustentáveis</strong></h2>
+      <div class="imagens">
+        <div class="col" id="img-1">
+          <h2>Roupas e acessórios <strong>sustentáveis</strong></h2>
+          <button><a href="Pages/produtos.html">Clique e Veja Mais</a></button>
+        </div>
+        <div class="col" id="img-2">
+          <h2>Conheça nossa <strong>Tecnologia verde</strong></h2>
+          <button><a href="Pages/tecnologia.html">Clique e Veja Mais</a></button>
+        </div>
+        <div class="col" id="img-3">
+          <h2>Produtos Pessoais e de beleza <strong>Naturais</strong></h2>
+          <button><a href="Pages/produtos.html">Clique e Veja Mais</a></button>
+        </div>
+        <div class="col" id="img-4">
+          <h2>Itens <strong>Sustentáveis</strong> Para Casa</h2>
+          <button><a href="Pages/produtos.html">Clique e Veja Mais</a></button>
+        </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <!-- PRODUTOS -->
   <section class="produtos">
@@ -137,7 +143,7 @@
 
   <!-- FOOTER -->
    <footer>
-    
+
    </footer>
   
 
