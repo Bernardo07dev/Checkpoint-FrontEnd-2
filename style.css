@@ -27,7 +27,17 @@ body{
     width: 100%;
     font-size: 1em;
     padding: 10px;
+    transition: 0.3s;
 }
+
+.nav-item:hover{
+    display: grid;
+    width: 100%;
+    font-size: 1.1em;
+    padding: 10px;
+    transition: 0.3s;
+}
+
 
 .nav-link{
     padding: 0;
@@ -43,8 +53,16 @@ body{
     width: 10%;
 }
 
-.icones > img{
+.icones > svg{
     width: 26%;
+    transition: 0.5s;
+}
+
+.icones > svg:hover{
+    fill: rgba(186, 186, 255, 0.548);
+    cursor: pointer;
+    width: 29%;
+    transition: 0.5s;
 }
 
 /* ---CARROSEL INICIAL--- */
@@ -185,7 +203,7 @@ body{
 
 .card-body{
     background-color: #f3f3f36f;
-    padding: 20px;
+    padding: 20px 30px;
     border-radius: 10px;
 }
 
@@ -195,13 +213,13 @@ body{
 }
 
 .card-body h5{
-    font-size: 1em;
+    font-size: 0.9em;
 }
 
 .card-body a{
-    background-color: #e7e7e7;
+    background-color: #01c411;
     border:#00000021;
-    color: black;
+    color: rgb(255, 255, 255);
     font-size: 0.8em;
     padding: 10px;
     font-weight: 500;
